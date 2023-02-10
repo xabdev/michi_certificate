@@ -1,2 +1,2 @@
-# michi_certificate
-saca tu carnet de michifan!
+## michi_certificate
+**saca tu carnet de michifan!**
