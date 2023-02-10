@@ -1,0 +1,55 @@
+body    { 
+    background-color: #1c1e1f;
+    color: rgb(254, 37, 134);
+  }
+
+
+h1      { 
+    font-family: sans-serif;
+    text-align: center;
+    padding: auto;
+    margin: auto;
+  }
+
+p       {
+    font-family: monospace;
+    font-size: 15px;
+    margin-top: 2px;
+    padding-bottom: 40px;
+  }
+
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+form   { 
+    font-family: monaco;
+    font-size: 20px;
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+  }
+
+input { 
+  display: block;
+
+}
+
+
+input, select {
+
+          margin: 10px 0 0 0;
+          width: 100%;
+          min-height: 2em;                
+        }
+
+.inline { display: inline-block;}
+
+
+
+
+
+
