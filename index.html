@@ -13,11 +13,13 @@
     <form id="survey-form">
   
         <fieldset>
+            <legend>Give us your information muahaha!</legend>
             <label id="name-label">What's your name? <input required id="name" type="text" placeholder="gor d. lonjas"></label>
             <label id="email-label">Give us your email! <input required id="email" type="email" placeholder="ilove@michis.cat"></label>
         </fieldset>
 
         <fieldset>
+            <legend>Quantity and Origin</legend>
             <label id="number-label">Number of cats? <input id="number" type="number" min="1" max="10" placeholder="100"></label>
             <label>Where do they come from? 
             <select id="dropdown">
@@ -32,18 +34,20 @@
         </fieldset>
 
         <fieldset>
-            <label>Indoor Cats<input type="radio" name="space" value="indoor"></label>
-            <label>Outdoor Cats<input type="radio" name="space" value="outdoor"></label>
+            <legend>Do you let your cat's go outside?</legend>
+            <label id="radio1"><input type="radio" name="space" value="indoor">Yes</label>
+            <label id="radio2"><input type="radio" name="space" value="outdoor">Sometimes</label>
+            <label id="radio3"><input type="radio" name="space" value="outdoor">No</label>
         </fieldset>
 
         <fieldset>
-            <label>Option #1
-                <input name="opt" value="yes" type="checkbox">
-                 Option #2
-                <input name="opt" value="no" type="checkbox">
-            </label>
+            <legend>What kind of colour?</legend>
+            <label id="op1"></label><input name="opt" value="yes" type="checkbox">Solid</label>
+            <label id="op2"><input name="opt" value="no" type="checkbox">Bicolor</label>
+            <label id="op3"><input name="opt" value="no" type="checkbox">Tri-color</label>
         </fieldset>
         <fieldset>
+            <legend>Where do you learn about cats ?!</legend>
             <label>
             <textarea id="likes" name="likes" rows="10" cols="28" placeholder="I like fat michis..."></textarea>
             </label>
