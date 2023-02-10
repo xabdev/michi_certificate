@@ -27,7 +27,7 @@ form   {
 }
 
 
-legend {font-size: 15px; text-align: center;}
+legend {font-size: 15px; text-align: center; font-style: italic;}
 
 label  {
   margin: 0.5rem 0;
@@ -41,7 +41,7 @@ label  {
 fieldset 
         { 
           padding-bottom: 20px; 
-          padding-top: 20px; 
+          padding-top: 10px; 
           margin-top: 20px; 
           margin-bottom: 20px;
         }
