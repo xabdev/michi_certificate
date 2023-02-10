@@ -3,7 +3,6 @@ body    {
   color: rgb(254, 37, 134);
 }
 
-
 h1      { 
   font-family: sans-serif;
   text-align: center;
@@ -18,46 +17,25 @@ p       {
   padding-bottom: 40px;
 }
 
-
-label  {
-  display: block;
-  margin: 0.5rem 0;
-  font-family: sans-serif;
-  font-size: 20px;
-}
-
 form   { 
-  font-family: monaco;
+  font-family: monospace;
   font-size: 20px;
   text-align: center;
-  width: 500px;
+  width: 400px;
   margin: 0 auto;
   padding-bottom: 2em;
 }
 
-input { 
-display: block;
 
+legend {font-size: 15px; text-align: center;}
 
-
+label  {
+  margin: 0.5rem 0;
+  font-family: monospace;
+  font-size: 15px;
 }
 
+.block {display: block}
+.sel { width: 100%;}
 
-input, select {
-
-        margin: 10px 0 0 0;
-        width: 100%;
-        min-height: 2em;                
-      }
-
-
-legend {font-size: 15px; text-align: left;}
-
-fieldset { margin-top: 20px;}
-
-
-
-
-
-
-
+fieldset { padding-bottom: 20px; padding-top: 20px; margin-top: 20px; margin-bottom: 20px;}

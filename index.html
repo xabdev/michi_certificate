@@ -14,15 +14,15 @@
   
         <fieldset>
             <legend>Give us your information muahaha!</legend>
-            <label id="name-label">What's your name? <input required id="name" type="text" placeholder="gor d. lonjas"></label>
-            <label id="email-label">Give us your email! <input required id="email" type="email" placeholder="ilove@michis.cat"></label>
+            <label class="block" id="name-label">What's your name? <input class="block, sel" required id="name" type="text" placeholder="gor d. lonjas"></label>
+            <label id="email-label">Give us your email! <input class="block, sel" required id="email" type="email" placeholder="ilove@michis.cat"></label>
         </fieldset>
 
         <fieldset>
             <legend>Quantity and Origin</legend>
-            <label id="number-label">Number of cats? <input id="number" type="number" min="1" max="10" placeholder="100"></label>
+            <label class="block" id="number-label">Number of cats? <input class="block, sel" id="number" type="number" min="1" max="10" placeholder="100"></label>
             <label>Where do they come from? 
-            <select id="dropdown">
+            <select class="block, sel" id="dropdown">
                 <option value="">Pick one!</option>
                 <option value="1">Compraditos</option>
                 <option value="2">Adoptaditos</option>
@@ -42,7 +42,7 @@
 
         <fieldset>
             <legend>What kind of colour?</legend>
-            <label id="op1"></label><input name="opt" value="yes" type="checkbox">Solid</label>
+            <label id="op1"><input name="opt" value="yes" type="checkbox">Solid</label>
             <label id="op2"><input name="opt" value="no" type="checkbox">Bicolor</label>
             <label id="op3"><input name="opt" value="no" type="checkbox">Tri-color</label>
         </fieldset>
@@ -51,7 +51,9 @@
             <label>
             <textarea id="likes" name="likes" rows="10" cols="28" placeholder="I like fat michis..."></textarea>
             </label>
-            <input type="submit" value="Submit" />
+        </fieldset>
+        <fieldset>
+        <input type="submit" value="Submit" />
         </fieldset>
 
     </form>
