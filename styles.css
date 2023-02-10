@@ -7,6 +7,7 @@ h1      {
   text-align: center;
   padding: auto;
   margin: auto;
+  text-shadow: rgb(56, 56, 56) 0 -2px;
 }
 
 p       {
@@ -49,7 +50,9 @@ input, select, textarea {
 
 
 fieldset:last-of-type { padding: 0px;
-                        border: none; }
+                        border: none; 
+                        background: none;
+                        box-shadow:none; }
 
 
 
@@ -88,7 +91,7 @@ a:visited { color: #36bcff;}
   height: 100px;
   background-color: red;
   animation-name: wallpaper;
-  animation-duration: 20s;
+  animation-duration: 15s;
   animation-iteration-count: infinite;
 }
 
