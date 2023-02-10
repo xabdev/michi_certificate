@@ -14,14 +14,14 @@ p       {
   font-family: monospace;
   font-size: 15px;
   margin-top: 2px;
-  padding-bottom: 40px;
+  padding-bottom: 15px;
 }
 
 form   { 
   font-family: monospace;
   font-size: 20px;
   text-align: center;
-  width: 400px;
+  width: 350px;
   margin: 0 auto;
   padding-bottom: 2em;
 }
@@ -36,6 +36,24 @@ label  {
 }
 
 .block {display: block}
-.sel { width: 100%;}
+.sel { width: 75%; text-align: center;}
 
-fieldset { padding-bottom: 20px; padding-top: 20px; margin-top: 20px; margin-bottom: 20px;}
+fieldset 
+        { 
+          padding-bottom: 20px; 
+          padding-top: 20px; 
+          margin-top: 20px; 
+          margin-bottom: 20px;
+        }
+
+input, select, textarea {
+                          background-color: #3b3b4f;
+                          color: grey;
+                        }
+
+
+fieldset:last-of-type {
+          
+          padding:0px;
+          border: none;
+           }
