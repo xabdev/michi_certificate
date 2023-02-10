@@ -57,3 +57,7 @@ fieldset:last-of-type {
           padding:0px;
           border: none;
            }
+
+footer {font-size: 20px;}
+
+h2 { font-size: 15px; font-family: verdana; font-style: italic; color:#3b3b4f}
