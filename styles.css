@@ -58,6 +58,32 @@ fieldset:last-of-type {
           border: none;
            }
 
-footer {font-size: 20px;}
 
-h2 { font-size: 15px; font-family: verdana; font-style: italic; color:#3b3b4f}
+
+footer {
+         font-family: Raleway;
+         padding-left: 1vw;
+         padding-right: 1vw;
+         margin: auto;
+       }
+          
+#copyright {text-align: left;
+            margin-right:120px;
+            }
+          
+#qa { text-align: right;}
+
+
+
+h2       {
+  text-align: center;
+  font-family: monospace;
+  font-size: 10px;
+  margin-top: -25px;
+  padding-bottom: 15px;
+  color: rgb(60, 87, 197);
+}
+
+
+a.link { color: rgb(60, 87, 197);}
+a:visited { color: #36bcff;}
