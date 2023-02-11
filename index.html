@@ -72,14 +72,16 @@
           const likes = document.querySelector("#likes").value;
       
           const formDataDisplay = `
+            <div class="r">
             <h4>Michi Certificate +</h4>
-            <h3>${name}</h3>
+            <h3>Name: ${name}</h3>
             <h3>e-mail: ${email}</h3>
             <h3>Has ${number} criminals.</h3>
             <h3>Origin: ${dropdown}</h3>
             <h3>Can they go outside?: ${space}</h3>
             <h3>Colors: ${opt.join(", ")}</h3>
-            <h3>${likes}</h3>
+            <h3>Where do you learn about cats?: ${likes}</h3>
+            </div>
           `;
       
           document.querySelector("#form-data-display").innerHTML = formDataDisplay;
@@ -95,6 +97,7 @@
 
       <br>
       
+
 
 
     <h2>
