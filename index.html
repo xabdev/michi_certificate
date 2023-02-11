@@ -61,7 +61,7 @@
         </fieldset>
 
     </form>
-    <script>
+    <!-- <script>
         function displayFormData() {
           const name = document.querySelector("#name").value;
           const email = document.querySelector("#email").value;
@@ -94,6 +94,39 @@
         });
       
       
+      </script> -->
+
+      <script>
+        function displayFormData() {
+          const name = document.querySelector("#name").value;
+          const email = document.querySelector("#email").value;
+          const number = document.querySelector("#number").value;
+          const dropdown = document.querySelector("#dropdown").value;
+          const space = document.querySelector('input[name="space"]:checked').value;
+          const opt = Array.from(document.querySelectorAll('input[name="opt"]:checked')).map(checkbox => checkbox.value);
+          const likes = document.querySelector("#likes").value;
+      
+          fetch("form-data.html")
+            .then(response => response.text())
+            .then(data => {
+              const formDataDisplay = data.replace("${name}", name)
+                                        .replace("${email}", email)
+                                        .replace("${number}", number)
+                                        .replace("${dropdown}", dropdown)
+                                        .replace("${space}", space)
+                                        .replace("${opt.join(', ')}", opt.join(", "))
+                                        .replace("${likes}", likes);
+      
+              const newWindow = window.open("", "", "width=1009, height=755");
+              newWindow.document.write(formDataDisplay);
+            })
+            .catch(error => console.error(error));
+        }
+      
+        document.querySelector("form").addEventListener("submit", function(event) {
+          event.preventDefault();
+          displayFormData();
+        });
       </script>
       
       <div id="form-data-display"></div>
