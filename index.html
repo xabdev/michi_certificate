@@ -74,7 +74,7 @@
           const formDataDisplay = `
             <div class="r">
             <h4>Michi Certificate +</h4>
-            <h3>Name: ${name}</h3>
+            <h3>${name}</h3>
             <h3>e-mail: ${email}</h3>
             <h3>Has ${number} criminals.</h3>
             <h3>Origin: ${dropdown}</h3>
@@ -83,21 +83,29 @@
             <h3>Where do you learn about cats?: ${likes}</h3>
             </div>
           `;
-      
-          document.querySelector("#form-data-display").innerHTML = formDataDisplay;
+          const newWindow = window.open("", "", "width=400, height=400");
+                newWindow.document.write(formDataDisplay);
+          /*document.querySelector("#form-data-display").innerHTML = formDataDisplay;*/
         }
       
         document.querySelector("form").addEventListener("submit", function(event) {
           event.preventDefault();
           displayFormData();
         });
+      
+      
       </script>
       
       <div id="form-data-display"></div>
 
-      <br>
+     <!--  <iframe src="form-data.html" frameborder="2"></iframe> -->
 
-    <h2>
+      
+     <!-- <button onclick="window.open('form-data.html', '_blank', 'height=500,width=500')">Open New Window</button> -->
+    
+    
+    
+      <h2>
         <a id="copyright">Copyright © 2023</a>
         <a id="qa">QA Team: <a href="https://www.instagram.com/lagatalola">lola</a> <a href="https://www.instagram.com/puritriskelion">puri</a></h2></a>
     </h2>

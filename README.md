@@ -13,4 +13,4 @@
 # About
 
 "The `karen-certification-program` on GitHub Pages evaluates and certifies Karens worldwide".
-created maintained by xabdev.
+created & maintained by xabdev.
