@@ -13,7 +13,7 @@
     <h1>CERTIFICATE<h1>
     <p id="description">official michi fanclub</p>
    
-    <form method="post">
+    <form method="get">
   
         <fieldset>
             <legend>Give us your information muahaha !</legend>
@@ -27,20 +27,20 @@
             <label>Where do they come from ? 
             <select class="block, sel" id="dropdown">
                 <option value="">Pick one!</option>
-                <option value="1">Compraditos</option>
-                <option value="2">Adoptaditos</option>
-                <option value="3">Rescataditos</option>
-                <option value="4">Heredaditos</option>
-                <option>all of the above</option>
+                <option value="Compraditos">Compraditos</option>
+                <option value="Adptaditos">Adoptaditos</option>
+                <option value="Rescataditos">Rescataditos</option>
+                <option value="Heredaditos">Heredaditos</option>
+                <option value="all of the above">all of the above</option>
             </select>
             </label>
         </fieldset>
 
         <fieldset>
             <legend>Can they go outside ?</legend>
-            <label id="radio1"><input type="radio" name="space" value="indoor">Yes</label>
-            <label id="radio2"><input type="radio" name="space" value="outdoor">Sometimes</label>
-            <label id="radio3"><input type="radio" name="space" value="outdoor">No</label>
+            <label id="radio1"><input type="radio" name="space" value="Yes">Yes</label>
+            <label id="radio2"><input type="radio" name="space" value="Sometimes">Sometimes</label>
+            <label id="radio3"><input type="radio" name="space" value="No">No</label>
         </fieldset>
 
         <fieldset>
@@ -61,11 +61,41 @@
         </fieldset>
 
     </form>
+    <script>
+        function displayFormData() {
+          const name = document.querySelector("#name").value;
+          const email = document.querySelector("#email").value;
+          const number = document.querySelector("#number").value;
+          const dropdown = document.querySelector("#dropdown").value;
+          const space = document.querySelector('input[name="space"]:checked').value;
+          const opt = Array.from(document.querySelectorAll('input[name="opt"]:checked')).map(checkbox => checkbox.value);
+          const likes = document.querySelector("#likes").value;
+      
+          const formDataDisplay = `
+            <h4>Michi Certificate +</h4>
+            <h3>${name}</h3>
+            <h3>e-mail: ${email}</h3>
+            <h3>Has ${number} criminals.</h3>
+            <h3>Origin: ${dropdown}</h3>
+            <h3>Can they go outside?: ${space}</h3>
+            <h3>Colors: ${opt.join(", ")}</h3>
+            <h3>${likes}</h3>
+          `;
+      
+          document.querySelector("#form-data-display").innerHTML = formDataDisplay;
+        }
+      
+        document.querySelector("form").addEventListener("submit", function(event) {
+          event.preventDefault();
+          displayFormData();
+        });
+      </script>
+      
+      <div id="form-data-display"></div>
 
-    <button type="button" onclick="myFunction()">javascript test!</button>
-    <p id="demo"></p>
+      <br>
+      
 
-    <br>
 
     <h2>
         <a id="copyright">Copyright © 2023</a>
