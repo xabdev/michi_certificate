@@ -3,20 +3,10 @@
     <meta name="viewport" content="width-device-width, initial-scale=1">
     <link rel="stylesheet" href="styles2.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
-    <script>
-        function saveToPDF() {
-          var pdf = new jsPDF('p', 'pt', 'a4');
-          pdf.addHTML(document.body, function() {
-            var link = document.createElement("a");
-            link.download = "Michi Lover Certificate.pdf";
-            link.href = pdf.output('datauristring');
-            link.click();
-          });
-        }
-      </script>
+    <script src="script.js"></script>
     
 </head>
-<body>
+  <body>
     
 
 
@@ -39,15 +29,6 @@
 
 
 
-</body> 
+  </body> 
 
-
-
-
-<!--                                     replace("${name}", name)
-                                        .replace("${email}", email)
-                                        .replace("${number}", number)
-                                        .replace("${dropdown}", dropdown)
-                                        .replace("${space}", space)
-                                        .replace("${opt.join(', ')}", opt.join(", "))
-                                        .replace("${likes}", likes); -->
+  
