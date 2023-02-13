@@ -1,5 +1,5 @@
 function saveToPDF() {
-    var pdf = new jsPDF('p', 'pt', 'a4');
+    var pdf = new jsPDF('l', 'pt', 'a4');
     pdf.addHTML(document.body, function() {
       var link = document.createElement("a");
       link.download = "Michi Lover Certificate.pdf";
