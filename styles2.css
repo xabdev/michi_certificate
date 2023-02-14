@@ -18,7 +18,7 @@ body {
     height: 200mm;
     width: 267mm;
     border: 1mm solid #eb09a0;
-    background: rgb(238,174,202);
+    background: rgb(238, 174, 202);
     /*background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);*/
     /*background-blend-mode: screen, color-dodge, overlay, difference, normal;*/
 }
@@ -88,54 +88,59 @@ p {
     text-shadow: 0.5px 2.5px 10px rgba(233, 233, 233, 0.5);
 }
 
-h3#dedication { font-size: 30px;
-                margin: 40px 0px 0px 0px;
-                padding: 0px 0px 0px 0px;
-              }
-              
-p#data { margin: 20px 0px 20x 0px;}
+h3#dedication {
+    font-size: 30px;
+    margin: 40px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
 
-p#dedication2 {font-size: 20px;
-               margin: 0px 0px 20px 0px;
-                }
- 
+p#data {
+    margin: 20px 0px 20x 0px;
+}
+
+p#dedication2 {
+    font-size: 20px;
+    margin: 0px 0px 20px 0px;
+}
+
 .badge {
     width: 54mm;
     height: 41mm;
     position: absolute;
-    right:  2mm;
+    right: 2mm;
     bottom: 11mm;
     background-image: url("right.png");
     background-repeat: no-repeat;
     background-size: 75%;
     opacity: 15%;
-    
+
 }
 
 .badge2 {
     width: 54mm;
     height: 41mm;
     position: absolute;
-    right:  173mm;
+    right: 173mm;
     bottom: 11mm;
     background-image: url("left.png");
     background-repeat: no-repeat;
     background-size: 75%;
     opacity: 15%;
-    
+
 }
 
-div#current_date { margin: 0px;
-                   padding-top: 5px;
-                    }
+div#current_date {
+    margin: 0px;
+    padding-top: 5px;
+}
 
 
 
 .data {
 
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 25px;
-        }
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
 
 
 
@@ -173,7 +178,6 @@ div#current_date { margin: 0px;
 
 
 .date {
-        font-size: 15px;
-        padding-top: 40px;
-        }
-
+    font-size: 15px;
+    padding-top: 40px;
+}

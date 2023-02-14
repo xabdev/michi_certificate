@@ -3,14 +3,13 @@
 <p align="center"><img src="logo.png" width="230" height="210" alt="Michi logo"></p>
 
 
-<h2 align="center">Karen Certification Program</h2>
+<h2 align="center">Cat Owner Certificate</h2>
 
-<p align="center">Get your michi id now!</p>
+<p align="center">Created with HTML, CSS, JavaScript, and GIMP by xabdev</p>
 
 
 
 
 # About
 
-"The `karen-certification-program` on GitHub Pages evaluates and certifies Karens worldwide".
-created & maintained by xabdev.
+'Cat Owner Certificate' is a web application that allows users to generate customized certificates in PDF format.
