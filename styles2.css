@@ -29,12 +29,12 @@ body {
     top: 10mm;
     height: 178mm;
     width: 245mm;
-    border: 1mm solid #991B1B;
+    border: 0.5mm solid #991b8a;
     background: white;
 }
 
 .inner-content {
-    border: 1mm solid #991B1B;
+    border-bottom: 0.5mm solid #dd00ff;
     margin: 4mm;
     padding: 10mm;
     padding-left: 0px;
@@ -64,25 +64,28 @@ h2 {
     padding-bottom: 1mm;
     margin-left: 80px;
     display: inline-block;
-    border-bottom: 1mm solid #991B1B;
+    border-bottom: 0.5mm solid #dd00ff;
+    text-shadow: 0.5px 2.5px 10px rgba(207, 207, 207, 0.5);
 }
 
 h2::after {
     content: "";
     display: block;
     padding-bottom: 4mm;
-    border-bottom: 1mm solid #991B1B;
+    border-bottom: 0.5mm solid #dd00ff;
 }
 
 h3 {
     font-size: 20pt;
     margin-bottom: 0;
     margin-top: 5mm;
+    text-shadow: 0.5px 2.5px 10px rgba(207, 207, 207, 0.5);
 }
 
 p {
     font-size: 16pt;
     margin-top: 15px;
+    text-shadow: 0.5px 2.5px 10px rgba(207, 207, 207, 0.5);
 }
 
 .badge {
@@ -91,7 +94,10 @@ p {
     position: absolute;
     right: 10mm;
     bottom: 10mm;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z' /%3E%3C/svg%3E");
+    background-image: url("paw.svg");
+    background-repeat: no-repeat;
+    opacity: 25%;
+    
 }
 
 

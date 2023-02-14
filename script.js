@@ -1,12 +1,24 @@
 function saveToPDF() {
-    var pdf = new jsPDF('l', 'pt', 'a4');
+  var pdf = new jsPDF('l', 'pt', 'a4');
+  var button = document.querySelector('button[onclick="saveToPDF()"]');
+  var excludeElement = document.createElement('div');
+  excludeElement.appendChild(button);
+  pdf.addHTML(document.body, function() {
+    pdf.deletePage(1); // Remove the page with the button
+    pdf.addPage();
     pdf.addHTML(document.body, function() {
       var link = document.createElement("a");
       link.download = "Michi Lover Certificate.pdf";
       link.href = pdf.output('datauristring');
       link.click();
     });
-  }
+  }, function(element) {
+    if (element === button) {
+      return false;
+    }
+    return true;
+  });
+}
 
 
   window.onload = function() {
