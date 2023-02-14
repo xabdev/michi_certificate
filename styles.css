@@ -1,12 +1,21 @@
+
+
 body    { 
   color: rgb(255, 255, 255);
+  padding: 0px 0px 0px 0px;
+  margin: 0px;
 }
 
+
+html {text-align: center;}
+
 h1      { 
-  font-family: sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  padding: auto;
-  margin: auto;
+  font-size: 35px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  font-weight: 750;
   text-shadow: rgb(56, 56, 56) 0 -2px;
 }
 
@@ -15,6 +24,7 @@ p       {
   font-size: 15px;
   margin-top: 2px;
   padding-bottom: 15px;
+  font-weight: 750;
 }
 
 h3 
@@ -28,6 +38,7 @@ h3
     color:rgb(255, 255, 255);
     text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
     font-weight: 500;
+    opacity: 100px;
     }
 
 h4
@@ -74,7 +85,7 @@ label  { margin: 0.5rem 0; font-size: 15px; font-weight: 500;}
 
 fieldset { padding-bottom: 20px; 
            padding-top: 10px; 
-           margin-top: 20px; 
+           margin-top: 15px; 
            margin-bottom: 20px;
            background-color:#2d2c2b; 
            box-shadow:0 0 20px 0 rgb(73, 61, 71);
@@ -88,6 +99,31 @@ input, select, textarea {
 
 ::placeholder { background-color: #3b3b4f;
                 color: rgb(141, 141, 141);}
+
+p#description {font-size: 15px;
+               margin: 5px 0px 0px 0px;
+               padding: 0px 0px 5px 0px;
+               letter-spacing:2px;
+               font-weight: 400;
+              
+              }    
+               
+h1#title { font-size: 45px;
+           margin: 0px;
+           letter-spacing: 2px;
+           line-height: 40px;
+           }
+
+
+
+
+
+input#submit { width: 150px;
+               height: 40px;
+               border: 1px solid;
+               padding: 10px;
+               box-shadow: 5px 10px rgb(54, 54, 54);
+}
 
 
 
@@ -103,7 +139,8 @@ fieldset:last-of-type { padding: 0px;
          background-color: red;
          animation-name: wallpaper;
          animation-duration: 15s;
-         animation-iteration-count: infinite; }
+         animation-iteration-count: infinite; 
+        }
 
 @keyframes wallpaper {
   0%   {background-color: rgb(184, 91, 174);}
@@ -116,6 +153,6 @@ fieldset:last-of-type { padding: 0px;
 
 
 
-footer { font-size: 10px;
+footer { font-size: 15px;
          font-weight: 100; }
 

@@ -8,7 +8,7 @@ function saveToPDF() {
     pdf.addPage();
     pdf.addHTML(document.body, function() {
       var link = document.createElement("a");
-      link.download = "Michi Lover Certificate.pdf";
+      link.download = "Cat Owner Certificate.pdf";
       link.href = pdf.output('datauristring');
       link.click();
     });
