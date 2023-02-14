@@ -18,8 +18,9 @@ body {
     height: 200mm;
     width: 267mm;
     border: 1mm solid #eb09a0;
-    background: radial-gradient(50% 123.47% at 50% 50%, #00FF94 0%, #720059 100%), linear-gradient(121.28deg, #669600 0%, #FF0000 100%), linear-gradient(360deg, #0029FF 0%, #8FFF00 100%), radial-gradient(100% 164.72% at 100% 100%, #6100FF 0%, #00FF57 100%), radial-gradient(100% 148.07% at 0% 0%, #FFF500 0%, #51D500 100%);
-    background-blend-mode: screen, color-dodge, overlay, difference, normal;
+    background: rgb(238,174,202);
+    /*background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);*/
+    /*background-blend-mode: screen, color-dodge, overlay, difference, normal;*/
 }
 
 
@@ -29,15 +30,14 @@ body {
     top: 10mm;
     height: 178mm;
     width: 245mm;
-    border: 0.5mm solid #991b8a;
+    border: 0.5mm solid #eb09a0;
     background: white;
 }
 
 .inner-content {
-    border-bottom: 0.5mm solid #dd00ff;
+    border-bottom: 0.5mm solid #eb09a0;
     margin: 4mm;
     padding: 10mm;
-    padding-left: 0px;
     height: 148mm;
     text-align: center;
     background-image: url("title.png");
@@ -53,7 +53,7 @@ h1 {
     text-transform: uppercase;
     font-size: 48pt;
     margin-bottom: 0;
-    margin-top: 45px;
+    margin-top: 85px;
     color: white;
     opacity: 0%;
 }
@@ -62,9 +62,8 @@ h2 {
     font-size: 24pt;
     margin-top: 0;
     padding-bottom: 1mm;
-    margin-left: 80px;
     display: inline-block;
-    border-bottom: 0.5mm solid #dd00ff;
+    border-bottom: 0.5mm solid #eb09a0;
     text-shadow: 0.5px 2.5px 10px rgba(207, 207, 207, 0.5);
 }
 
@@ -72,7 +71,7 @@ h2::after {
     content: "";
     display: block;
     padding-bottom: 4mm;
-    border-bottom: 0.5mm solid #dd00ff;
+    border-bottom: 0.5mm solid #eb09a0;
 }
 
 h3 {
@@ -92,26 +91,34 @@ p {
     width: 40mm;
     height: 40mm;
     position: absolute;
-    right: 10mm;
-    bottom: 10mm;
+    right:  2mm;
+    bottom: 2mm;
     background-image: url("paw.svg");
     background-repeat: no-repeat;
+    background-size: 75%;
     opacity: 25%;
     
 }
+
+.data {
+
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 25px;
+        }
 
 
 
 .grid-container {
     display: grid;
     column-gap: 10px;
+    row-gap: 20px;
     grid-template-columns: auto auto;
     padding: 10px;
 }
 
 .grid-item-a {
 
-    padding: 20px;
+    padding: 0px;
     font-size: 30px;
     text-align: center;
 }
