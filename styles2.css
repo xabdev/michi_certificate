@@ -139,3 +139,9 @@ p {
     grid-column-end: 3;
 
 }
+
+
+.date {
+        font-size: 15px;
+        padding-top: 40px;
+        }
