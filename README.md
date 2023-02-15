@@ -1,6 +1,6 @@
 <p align="center"><img src="logo.png" width="230" height="210" alt="Michi logo"></p>
 <h2 align="center">Cat Owner Certificate</h2>
-<p align="center">Created with HTML, CSS, JavaScript, and GIMP by xabdev</p>
+<p align="center">Created with HTML, CSS, JavaScript, jsPDF and GIMP by xabdev</p>
 
 
 <br><br><br>

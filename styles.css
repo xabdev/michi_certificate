@@ -163,7 +163,7 @@ fieldset:last-of-type {
   height: 100px;
   background-color: red;
   animation-name: wallpaper;
-  animation-duration: 15s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
 }
 
@@ -173,15 +173,15 @@ fieldset:last-of-type {
   }
 
   25% {
-    background-color: rgb(240, 132, 197);
+    background-color: rgb(129, 28, 112);
   }
 
   50% {
-    background-color: rgb(246, 98, 222);
+    background-color: rgb(184, 91, 174);
   }
 
   75% {
-    background-color: rgb(172, 61, 128);
+    background-color: rgb(129, 28, 112);
   }
 
   100% {
@@ -195,4 +195,9 @@ fieldset:last-of-type {
 footer {
   font-size: 15px;
   font-weight: 100;
-}
+  }
+
+a {color:white;}
+a:link { color:white;}
+a:visitar {color:white;}
+a:hover {color:rgb(110, 110, 110);}
